@@ -1,0 +1,33 @@
+.user--leftaside{
+  width: 180px;
+  position: absolute;
+  padding: 0 $spacing;
+  top: $spacing * 4;
+  text-align: center;
+}
+.user--sticky{
+  position: fixed;
+}
+
+.user__icons{
+  display: flex;
+  justify-content: space-between;
+  a{
+    font-weight: bold;
+  }
+}
+
+
+.related-stories__item{
+  border-bottom: 1px solid $brand-color;
+  &:first-child{
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+}
+.related-stories__links{
+  display: block;
+  font-size: 1.4rem;
+  padding: 1.2rem 0;
+  text-align: left;
+}

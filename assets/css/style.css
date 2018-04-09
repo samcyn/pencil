@@ -11,7 +11,7 @@ body {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-body, ul {
+body, ul, h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
 }
@@ -23,6 +23,23 @@ ul {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+.mt-0 {
+  margin-top: 0 !important;
+}
+
+[class*='icons__'] {
+  align-content: center;
+  align-items: center;
+  border: 2px solid #454343;
+  border-radius: 100%;
+  display: flex;
+  font-size: 1.8rem;
+  height: 3rem;
+  justify-content: center;
+  line-height: 1.8rem;
+  width: 3rem;
 }
 
 .container {
@@ -46,8 +63,8 @@ a {
 }
 
 .navbar {
-  border-top: 0.1rem solid #454343;
-  border-bottom: 0.1rem solid #454343;
+  border-top: 0.2rem solid #454343;
+  border-bottom: 0.2rem solid #454343;
   display: flex;
   flex-flow: row nowrap;
 }
@@ -76,9 +93,53 @@ a {
   padding: 1.5rem 2.5rem;
 }
 
+.stories {
+  width: calc(100% - 250px);
+  margin-left: auto;
+  padding: 0 1.5rem;
+}
+
+.user--leftaside {
+  width: 180px;
+  position: absolute;
+  padding: 0 1.5rem;
+  top: 6rem;
+  text-align: center;
+}
+
+.user--sticky {
+  position: fixed;
+}
+
+.user__icons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.user__icons a {
+  font-weight: bold;
+}
+
+.related-stories__item {
+  border-bottom: 1px solid #454343;
+}
+
+.related-stories__item:first-child {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.related-stories__links {
+  display: block;
+  font-size: 1.4rem;
+  padding: 1.2rem 0;
+  text-align: left;
+}
+
 main {
   margin: 0 auto;
   max-width: calc(100% - (1.5rem * 2));
-  padding: 0 1.5rem;
+  padding: 6rem 0;
+  position: relative;
 }
 /*# sourceMappingURL=style.css.map */

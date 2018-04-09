@@ -1,0 +1,20 @@
+{
+    "version": 3,
+    "mappings": "AIAA,AAAA,CAAC,EAAE,AAAA,CAAC,AAAA,MAAM,EAAE,AAAA,CAAC,AAAA,OAAO,CAAA;EAClB,UAAU,EAAE,UAAU;CACvB;;AACD,AAAA,IAAI,CAAC;EACH,SAAS,EAAE,KAAK;CACjB;;AACD,AAAA,IAAI,EAAE,AAAA,EAAE,CAAA;EACN,KAAK,EFPO,OAAO;EEQnB,WAAW,EAAE,2DAA2D;EACxE,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;CAEX;;AAED,AAAA,EAAE,CAAA;EACA,eAAe,EAAE,IAAI;CACtB;;AIhBD,AAAA,OAAO,CAAA;EACL,UAAU,EAAE,iBAAiB;EAC7B,aAAa,EAAE,iBAAiB;EAChC,OAAO,EAAE,IAAI;EACb,SAAS,EAAE,UAAU;CACtB;;AAED,AAAA,gBAAgB,CAAA;EACd,OAAO,EAAE,IAAI;EACb,KAAK,EAAE,IAAI;CACZ;;AAED,AAAA,iBAAiB,CAAA;EACf,IAAI,EAAE,KAAK;CACZ;;AACD,AAAA,aAAa,CAAA;EACX,aAAa,EAAE,MAAM;EACrB,WAAW,EAAE,MAAM;EACnB,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,MAAM;CAExB;;AACD,AAAA,UAAU,CAAA;EACR,KAAK,EAAE,OAAO;EACd,OAAO,EAAE,KAAK;EACd,SAAS,EAAE,MAAM;EACjB,WAAW,EAAE,MAAM;EACnB,OAAO,EAAE,aAAa;CACvB",
+    "sources": [
+        "style.scss",
+        "../scss/_main.scss",
+        "../scss/base/_variables.scss",
+        "../scss/base/_mixins.scss",
+        "../scss/base/_reset.scss",
+        "../scss/base/_base.scss",
+        "../scss/modules/_typography.scss",
+        "../scss/components/_card.scss",
+        "../scss/layout/_header.scss",
+        "../scss/layout/_main-content.scss",
+        "../scss/layout/_sidebar.scss",
+        "../scss/layout/_footer.scss"
+    ],
+    "names": [],
+    "file": "style.css"
+}

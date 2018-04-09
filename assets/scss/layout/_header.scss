@@ -1,0 +1,29 @@
+.navbar{
+  border-top: 0.1rem solid #DDD;
+  border-bottom: 0.1rem solid #DDD;
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.navbar__toggler{
+  display: none;
+  width: 5rem;
+}
+
+.navbar__collapse{
+  flex: 1 0 0;
+}
+.navbar__list{
+  align-content: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+ 
+}
+.nav__link{
+  color: inherit;
+  display: block;
+  font-size: 1.8rem;
+  line-height: 1.8rem;
+  padding: 1.5rem 2.5rem;
+}

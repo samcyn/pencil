@@ -6,9 +6,12 @@ html {
   font-size: 62.5%;
 }
 
-body, ul {
+body {
   color: #454343;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body, ul {
   margin: 0;
   padding: 0;
 }
@@ -17,9 +20,34 @@ ul {
   list-style-type: none;
 }
 
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.container {
+  padding: 0 1.5rem;
+  margin: 0 auto;
+  max-width: 100.5rem;
+}
+
+.brand__wrap {
+  padding: 6.5rem 0;
+}
+
+.brand__logo {
+  font-size: 5.2rem;
+  font-style: italic;
+  font-weight: 800;
+  line-height: 1.15;
+  margin: 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
 .navbar {
-  border-top: 0.1rem solid #DDD;
-  border-bottom: 0.1rem solid #DDD;
+  border-top: 0.1rem solid #454343;
+  border-bottom: 0.1rem solid #454343;
   display: flex;
   flex-flow: row nowrap;
 }
@@ -41,9 +69,9 @@ ul {
 }
 
 .nav__link {
-  color: inherit;
   display: block;
-  font-size: 1.8rem;
+  font-size: 1.4rem;
+  font-weight: 600;
   line-height: 1.8rem;
   padding: 1.5rem 2.5rem;
 }

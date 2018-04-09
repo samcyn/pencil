@@ -1,6 +1,19 @@
+.brand__wrap{
+  padding: 6.5rem 0;
+}
+
+.brand__logo{
+  font-size: 5.2rem;
+  font-style: italic;
+  font-weight: 800;
+  line-height: 1.15;
+  margin: 0;
+  text-align: center;
+  text-transform: uppercase;
+}
 .navbar{
-  border-top: 0.1rem solid #DDD;
-  border-bottom: 0.1rem solid #DDD;
+  border-top: 0.1rem solid $brand-color;
+  border-bottom: 0.1rem solid $brand-color;
   display: flex;
   flex-flow: row nowrap;
 }
@@ -21,9 +34,9 @@
  
 }
 .nav__link{
-  color: inherit;
   display: block;
-  font-size: 1.8rem;
+  font-size: 1.4rem;
+  font-weight: 600;
   line-height: 1.8rem;
   padding: 1.5rem 2.5rem;
 }

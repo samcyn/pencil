@@ -1,3 +1,6 @@
+.brand{
+  position: relative;
+}
 .brand__wrap{
   padding: 6.5rem 0;
 }
@@ -18,11 +21,6 @@
   flex-flow: row nowrap;
 }
 
-.navbar__toggler{
-  display: none;
-  width: 5rem;
-}
-
 .navbar__collapse{
   flex: 1 0 0;
 }
@@ -39,4 +37,24 @@
   font-weight: 600;
   line-height: 1.8rem;
   padding: 1.5rem 2.5rem;
+}
+
+.brand__toggler{
+  display: none;
+}
+
+@media(max-width: 762px){
+  .brand__toggler{
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: $spacing;
+  }
+  
+  .brand__button{
+    border: 0;
+    background-color: transparent;
+    font-size: 25px;
+
+  }
 }

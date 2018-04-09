@@ -3,3 +3,9 @@
   margin-left: auto;
   padding: 0 $spacing;
 }
+
+@media(max-width: 762px){
+  .stories{
+    width: 100%;
+  }
+}

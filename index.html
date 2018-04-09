@@ -10,7 +10,7 @@
 </head>
 
 <body>
-  <div class="container">
+  <div class="container container--wrapper">
 
     <!-- navigations and co inside -->
     <header>
@@ -20,12 +20,11 @@
             <a href="#"> PENCIL</a>
           </h3>
         </div>
+        <div class="brand__toggler" id="navbar-toggler">
+          <button class="brand__button">&copy;</button>
+        </div>
       </div>
       <nav class="navbar ">
-        <button class="navbar__toggler" type="button">
-          <span class="navbar__toggler-icon"></span>
-        </button>
-
         <div class="navbar__collapse">
           <ul class="navbar__list">
             <li class="nav__item nav__item--active">
@@ -39,6 +38,7 @@
           </ul>
         </div>
       </nav>
+      
     </header>
 
     <!-- detailed contents right here -->
@@ -64,12 +64,7 @@
             </div>
           </div>
         </div>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-
+      
         <div class="related-stories">
           <ul class="related-stories__list">
             <li class="related-stories__item">
@@ -318,6 +313,7 @@
   <script src="assets/js/main.js"></script>
   <script>
     app.fixedSidebar();
+    // app.sidebarController();
   </script>
 </body>
 

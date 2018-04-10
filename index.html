@@ -28,9 +28,7 @@
         <div class="navbar__collapse">
           <ul class="navbar__list">
             <li class="nav__item nav__item--active">
-              <a class="nav__link" href="#">Home
-                <span class="sr-only">(current)</span>
-              </a>
+              <a class="nav__link" href="#">Home</a>
             </li>
             <li class="nav__item">
               <a class="nav__link" href="#">Link</a>
@@ -101,11 +99,16 @@
 
       <!-- Stories sections -->
       <section class="stories">
-        <div>
-          <h3>LOrem Ipsum</h3>
-          <h6>Date Time Location</h6>
+        <div class="stories__head">
+          <h3 class="stories__title">LOrem Ipsum</h3>
+          <div class="stories__stats">
+            <span class="stories__date">2 hours ago, </span>
+            <span class="stories__location">Nigeria</span>
+            <span class="stories__views">1117 views</span>
+            
+          </div>
         </div>
-        <div>
+        <div class="stories__body">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem consequuntur sint quo, amet commodi maxime aperiam rerum maiores
           possimus dicta corporis, vel inventore. Voluptatibus aspernatur consequuntur modi iure iusto atque. Lorem ipsum
           dolor sit, amet consectetur adipisicing elit. Rem consequuntur sint quo, amet commodi maxime aperiam rerum maiores
@@ -313,7 +316,7 @@
   <script src="assets/js/main.js"></script>
   <script>
     app.fixedSidebar();
-    // app.sidebarController();
+    app.sidebarController();
   </script>
 </body>
 

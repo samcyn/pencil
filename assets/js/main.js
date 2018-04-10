@@ -79,11 +79,11 @@ var app = {
         }
       }
     }
-    if(window.innerWidth <= 991){
+    if(window.innerWidth <= 762){
       lbd.initRightMenu();      
     }
     window.addEventListener('resize', function(){
-      if(window.innerWidth <= 991){
+      if(window.innerWidth <= 762){
         lbd.initRightMenu();      
       }
     });

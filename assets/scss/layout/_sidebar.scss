@@ -2,29 +2,33 @@
   width: 180px;
   position: absolute;
   padding: 0 $spacing;
-  // top: $spacing * 4;
+  top: $spacing * 4;
   text-align: center;
 }
 .user__accounts{
   margin-bottom: 70px;
 }
+.user--rightaside{
+  display: none;
+}
+
 @media(max-width: 762px){
   .user--leftaside{
     display: none;
   }
   .user--rightaside {
-    width: 250px;
-    max-width: 475px;
-    position: fixed;
+    border-left: 2px solid $brand-color;
+    display: block;
     height: 100%;
-    padding: 0 1.5rem;
-    top: 0;
+    padding: 6.5rem 1.5rem 0  1.5rem;
+    position: fixed;
     right: 0;
     text-align: center;
-    border-left: 2px solid $brand-color;
-    padding-top: 65px;
+    top: 0;
+    width: 250px;
   }
 }
+
 .user--sticky{
   position: fixed;
 }

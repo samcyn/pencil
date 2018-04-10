@@ -9,3 +9,35 @@
     width: 100%;
   }
 }
+
+.stories__head{
+  margin-bottom: 2.8rem;
+}
+
+.stories__title{
+  font-size: 2.8rem;
+  text-transform: capitalize;
+  margin-bottom: 1.2rem;
+}
+
+.stories__stats{
+  font-size: 1.2rem;
+}
+
+.stories__views{
+  float: right;
+}
+
+.stories__body{
+  font-size: 1.4rem;
+  text-align: justify;
+}
+
+// FORMS
+.form__fieldset{
+  border-top: 2px solid $brand-color;
+  border-right: 0;
+  border-left: 0;
+  border-bottom: 0;
+  padding: 1.5rem 1.5rem;
+}

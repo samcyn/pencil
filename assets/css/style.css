@@ -47,6 +47,27 @@ button {
   width: 3rem;
 }
 
+.form__fieldset {
+  border: 0;
+  border-top: 0.2rem solid #454343;
+  padding: 1.5rem;
+}
+
+.form__block {
+  margin-bottom: 2rem;
+}
+
+.form__block:last-child {
+  margin-bottom: 0;
+}
+
+.form__input {
+  border: 0.1rem solid #454343;
+  height: 3rem;
+  outline: 0;
+  padding: 1rem 1.2rem;
+}
+
 .container {
   padding: 0 1.5rem;
   margin: 0 auto;
@@ -111,7 +132,7 @@ button {
   .brand__button {
     border: 0;
     background-color: transparent;
-    font-size: 25px;
+    font-size: 2.5rem;
   }
 }
 
@@ -150,24 +171,16 @@ button {
   text-align: justify;
 }
 
-.form__fieldset {
-  border-top: 2px solid #454343;
-  border-right: 0;
-  border-left: 0;
-  border-bottom: 0;
-  padding: 1.5rem 1.5rem;
-}
-
 .user--leftaside {
-  width: 180px;
   position: absolute;
   padding: 0 1.5rem;
   top: 6rem;
   text-align: center;
+  width: 18rem;
 }
 
 .user__accounts {
-  margin-bottom: 70px;
+  margin-bottom: 7rem;
 }
 
 .user--rightaside {
@@ -179,15 +192,15 @@ button {
     display: none;
   }
   .user--rightaside {
-    border-left: 2px solid #454343;
+    border-left: 0.2rem solid #454343;
     display: block;
     height: 100%;
-    padding: 6.5rem 1.5rem 0  1.5rem;
+    padding: 6.5rem 1.5rem 0 1.5rem;
     position: fixed;
     right: 0;
     text-align: center;
     top: 0;
-    width: 250px;
+    width: 25rem;
   }
 }
 
@@ -228,6 +241,9 @@ main {
 }
 
 @media (max-width: 762px) {
+  main {
+    max-width: 100%;
+  }
   .container--wrapper {
     -webkit-transform: translate3d(0px, 0, 0);
     -moz-transform: translate3d(0px, 0, 0);
@@ -245,11 +261,11 @@ main {
   }
   .nav-open .container--wrapper {
     left: 0;
-    -webkit-transform: translate3d(-250px, 0, 0);
-    -moz-transform: translate3d(-250px, 0, 0);
-    -o-transform: translate3d(-250px, 0, 0);
-    -ms-transform: translate3d(-250px, 0, 0);
-    transform: translate3d(-250px, 0, 0);
+    -webkit-transform: translate3d(-25rem, 0, 0);
+    -moz-transform: translate3d(-25rem, 0, 0);
+    -o-transform: translate3d(-25rem, 0, 0);
+    -ms-transform: translate3d(-25rem, 0, 0);
+    transform: translate3d(-25rem, 0, 0);
   }
   #bodyClick {
     height: 100%;
@@ -258,7 +274,7 @@ main {
     opacity: 0;
     top: 0;
     left: auto;
-    right: 250px;
+    right: 25rem;
     content: "";
     z-index: 9999;
     overflow-x: hidden;

@@ -1,12 +1,12 @@
 .user--leftaside{
-  width: 180px;
   position: absolute;
   padding: 0 $spacing;
   top: $spacing * 4;
   text-align: center;
+  width: $user--leftaside-width;
 }
 .user__accounts{
-  margin-bottom: 70px;
+  margin-bottom: 7rem;
 }
 .user--rightaside{
   display: none;
@@ -17,15 +17,15 @@
     display: none;
   }
   .user--rightaside {
-    border-left: 2px solid $brand-color;
+    border-left: 0.2rem solid $brand-color;
     display: block;
     height: 100%;
-    padding: 6.5rem 1.5rem 0  1.5rem;
+    padding: $user--rightaside-padding-top $spacing 0  $spacing;
     position: fixed;
     right: 0;
     text-align: center;
     top: 0;
-    width: 250px;
+    width: $user--rightaside-width;
   }
 }
 
@@ -51,6 +51,6 @@
 .related-stories__links{
   display: block;
   font-size: 1.4rem;
-  padding: 1.2rem 0;
+  padding: $related-stories__links-padding-top 0;
   text-align: left;
 }

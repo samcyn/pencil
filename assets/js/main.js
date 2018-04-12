@@ -2,8 +2,10 @@ var app = {
   fixedSidebar: function () {
     var elementPosition = document.getElementsByTagName("main")[0].offsetTop;
     var sidebar = document.getElementsByClassName('user--leftaside')[0];
-
     window.addEventListener('scroll', function (e) {
+      if(window.innerWidth <= 762){
+        return;
+      }
       var top = window.pageYOffset || document.documentElement.scrollTop;
       if (top > elementPosition - 60) {
         console.log(top > elementPosition);
@@ -59,10 +61,10 @@ var app = {
                 e.target.classList.add('toggled');
               }, 430);
 
-              
+
               document.getElementsByTagName('body')[0].appendChild($bodyClick);
-              
-              $bodyClick.addEventListener('click', function(e){
+
+              $bodyClick.addEventListener('click', function (e) {
                 $html.classList.remove('nav-open');
                 lbd.misc.navbar_menu_visible = 0;
                 this.remove();
@@ -71,7 +73,7 @@ var app = {
                 }, 400);
               });
 
-              $html.classList.add('nav-open');             
+              $html.classList.add('nav-open');
               lbd.misc.navbar_menu_visible = 1;
             }
           }
@@ -79,12 +81,12 @@ var app = {
         }
       }
     }
-    if(window.innerWidth <= 762){
-      lbd.initRightMenu();      
+    if (window.innerWidth <= 762) {
+      lbd.initRightMenu();
     }
-    window.addEventListener('resize', function(){
-      if(window.innerWidth <= 762){
-        lbd.initRightMenu();      
+    window.addEventListener('resize', function () {
+      if (window.innerWidth <= 762) {
+        lbd.initRightMenu();
       }
     });
   }

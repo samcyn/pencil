@@ -30,6 +30,10 @@ button {
   outline: 0;
 }
 
+hr {
+  border-color: #454343;
+}
+
 .mt-0 {
   margin-top: 0 !important;
 }
@@ -47,6 +51,10 @@ button {
   width: 3rem;
 }
 
+input:-webkit-autofill {
+  background-color: #FFFFFF;
+}
+
 .form__fieldset {
   border: 0;
   border-top: 0.2rem solid #454343;
@@ -62,10 +70,33 @@ button {
 }
 
 .form__input {
-  border: 0.1rem solid #454343;
-  height: 3rem;
+  color: #454343;
+  border: 0.2rem solid #454343;
+  font-size: 1.6rem;
+  height: 4rem;
   outline: 0;
   padding: 1rem 1.2rem;
+  max-width: 23.4rem;
+  width: 100%;
+}
+
+.button {
+  padding: 1rem 1.2rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  outline: 0;
+  min-width: 12rem;
+}
+
+.button--dark {
+  background-color: #454343;
+  color: #FFFFFF;
+}
+
+.button--outline {
+  background: transparent;
+  border: 0.2rem solid #222;
+  color: #454343;
 }
 
 .container {
@@ -92,11 +123,25 @@ button {
   text-transform: uppercase;
 }
 
+.brand__auth {
+  display: flex;
+  font-size: 1.4rem;
+  justify-content: space-between;
+  position: absolute;
+  top: 1rem;
+  width: 100%;
+}
+
+.brand__auth-divider {
+  margin: 0 0.1rem;
+}
+
 .navbar {
   border-top: 0.2rem solid #454343;
   border-bottom: 0.2rem solid #454343;
   display: flex;
   flex-flow: row nowrap;
+  position: relative;
 }
 
 .navbar__collapse {
@@ -169,6 +214,21 @@ button {
 .stories__body {
   font-size: 1.4rem;
   text-align: justify;
+}
+
+.accounts__wrap {
+  margin: 0 auto;
+  max-width: 23.4rem;
+}
+
+.accounts__options {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 3rem;
+}
+
+.accounts__options a {
+  font-size: 1.2rem;
 }
 
 .user--leftaside {

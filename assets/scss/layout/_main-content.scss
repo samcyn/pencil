@@ -33,3 +33,18 @@
   text-align: justify;
 }
 
+//Accounts
+.accounts__wrap{
+  margin: 0 auto;
+  max-width: $max-input-width;
+}
+
+.accounts__options{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 3rem;
+  a{
+    font-size: 1.2rem;
+  }
+}
+

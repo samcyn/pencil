@@ -26,3 +26,8 @@ button{
   cursor: pointer;
   outline: 0;
 }
+
+hr{
+  border-color: $brand-color;
+  // border-style: solid;
+}

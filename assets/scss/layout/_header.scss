@@ -14,12 +14,36 @@
   text-align: center;
   text-transform: uppercase;
 }
+
+.brand__auth{
+  display: flex;
+  font-size: 1.4rem;
+  justify-content: space-between;
+  position: absolute;
+  top: 1rem;
+  width: 100%;
+}
+
+.brand__auth-divider{
+  margin: 0 0.1rem;
+}
+
 .navbar{
   border-top: 0.2rem solid $brand-color;
   border-bottom: 0.2rem solid $brand-color;
   display: flex;
   flex-flow: row nowrap;
+  position: relative;
 }
+
+// .navbar__sticks{
+//   background-color: #FFF;
+//   height: 0.5rem;
+//   position: absolute;
+//   left: 20%;
+//   top: -3px;
+//   width: 12rem;
+// }
 
 .navbar__collapse{
   flex: 1 0 0;

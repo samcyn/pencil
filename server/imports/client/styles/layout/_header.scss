@@ -1,0 +1,83 @@
+.brand{
+  position: relative;
+}
+.brand__wrap{
+  padding: $brand-spacing 0;
+}
+
+.brand__logo{
+  font-size: 5.2rem;
+  font-style: italic;
+  font-weight: 800;
+  line-height: 1.15;
+  margin: 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.brand__auth{
+  display: flex;
+  font-size: 1.4rem;
+  justify-content: space-between;
+  position: absolute;
+  top: 1rem;
+  width: 100%;
+}
+
+.brand__auth-divider{
+  margin: 0 0.1rem;
+}
+
+.navbar{
+  border-top: 0.2rem solid $brand-color;
+  border-bottom: 0.2rem solid $brand-color;
+  display: flex;
+  flex-flow: row nowrap;
+  position: relative;
+}
+
+// .navbar__sticks{
+//   background-color: #FFF;
+//   height: 0.5rem;
+//   position: absolute;
+//   left: 20%;
+//   top: -3px;
+//   width: 12rem;
+// }
+
+.navbar__collapse{
+  flex: 1 0 0;
+}
+.navbar__list{
+  align-content: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+ 
+}
+.nav__link{
+  display: block;
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 1.8rem;
+  padding: 1.5rem 2.5rem;
+}
+
+.brand__toggler{
+  display: none;
+}
+
+@media(max-width: 762px){
+  .brand__toggler{
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: $spacing;
+  }
+  
+  .brand__button{
+    border: 0;
+    background-color: transparent;
+    font-size: 2.5rem;
+  }
+}

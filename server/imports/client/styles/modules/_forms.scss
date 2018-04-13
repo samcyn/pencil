@@ -1,0 +1,28 @@
+input:-webkit-autofill{
+  background-color: #FFFFFF;
+}
+// FORMS
+.form__fieldset{
+  border: 0;
+  border-top: 0.2rem solid $brand-color;
+  padding: $spacing;
+}
+
+.form__block{
+  margin-bottom: 2rem;
+  &:last-child{
+    margin-bottom: 0;
+  }
+}
+
+.form__input{
+  color: $brand-color;
+  border: 0.2rem solid $brand-color;
+  font-size: 1.6rem;
+  height: 4rem;
+  outline: 0;
+  padding: 1rem 1.2rem;
+  max-width: $max-input-width;
+  width: 100%;
+}
+

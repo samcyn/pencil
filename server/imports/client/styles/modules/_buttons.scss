@@ -1,0 +1,18 @@
+.button{
+  padding: 1rem 1.2rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  outline: 0;
+  min-width: 12rem;
+}
+
+.button--dark{
+  background-color: $brand-color;
+  color: #FFFFFF;
+}
+
+.button--outline{
+  background: transparent;
+  border: 0.2rem solid #222;
+  color: $brand-color;
+}

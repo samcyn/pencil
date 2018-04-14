@@ -1,6 +1,8 @@
 input:-webkit-autofill{
-  background-color: #FFFFFF;
+  background-color: #FFFFFF !important;
+  -webkit-box-shadow: 0 0 0px 1000px white inset;
 }
+
 // FORMS
 .form__fieldset{
   border: 0;
@@ -16,8 +18,9 @@ input:-webkit-autofill{
 }
 
 .form__input{
-  color: $brand-color;
+  background-color: transparent !important;
   border: 0.2rem solid $brand-color;
+  color: $brand-color !important;
   font-size: 1.6rem;
   height: 4rem;
   outline: 0;

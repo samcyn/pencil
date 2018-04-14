@@ -7,7 +7,7 @@ import PropTypes from 'prop-types'; // ES6
 const Input = (props) => {
   return (
     <div className="form__block">
-      <input type={ props.type } name={ props.name } placeholder={ props.placeholder } autoComplete="name" className="form__input" />
+      <input type={ props.type } name={ props.name } placeholder={ props.placeholder } defaultValue = { props.defaultValue } autoComplete="true" className="form__input" />
     </div>
   );
 }
@@ -15,7 +15,8 @@ const Input = (props) => {
 Input.propTypes = {
   type: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
-  placeholder: PropTypes.string
+  placeholder: PropTypes.string,
+  defaultValue: PropTypes.string
 }
 
 export default Input;

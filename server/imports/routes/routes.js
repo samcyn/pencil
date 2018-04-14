@@ -4,6 +4,9 @@ import Route from 'react-router-dom/Route';
 
 import IndexPage from '../ui/IndexPage';
 import LoginPage from '../ui/LoginPage';
+import SignupPage from '../ui/SignupPage';
+import UserAdminPage from '../ui/UserAdminPage';
+
 
 
 const User = (props) => {
@@ -15,7 +18,10 @@ export const routes = (
     <Switch>
       <Route path="/" exact strict component = { IndexPage }/>
       <Route path="/login" exact strict component = { LoginPage }/>
-      <Route path="/users/:username" exact strict render={ ({ match })=> (<User username={ match.params.username }/>) }/>
+      <Route path="/signup" exact strict component = { SignupPage }/>
+      <Route path="/users/:username" exact strict render={ 
+        ({ match })=> (<UserAdminPage username={ match.params.username }/>) 
+      }/>
       <Route path="*" render = { () => {
         return (<h1>Page Not Found</h1>)
       }}/>

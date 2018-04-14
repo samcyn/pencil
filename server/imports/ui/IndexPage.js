@@ -13,7 +13,7 @@ const IndexPage = (props) => {
       <Header/>
 
       <main>
-        <Aside/>
+        <Aside storyHeadline="Related Stories"/>
         
         <section className="stories">
           <div className="stories__head">

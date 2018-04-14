@@ -14,10 +14,12 @@ export default class Aside extends React.Component{
     }
     
     this.handleScroll = this.handleScroll.bind(this);
+    this.handleSidebarClone = this.handleSidebarClone.bind(this);
   }
 
   componentDidMount() {
     window.addEventListener('scroll', this.handleScroll);
+    this.handleSidebarClone();
   }
 
   componentWillUnmount() {
@@ -46,12 +48,87 @@ export default class Aside extends React.Component{
     }.bind(this));
   }
 
+  handleSidebarClone(){
+    var navbar_initialized = false;
+
+    lbd = {
+      misc: {
+        navbar_menu_visible: 0
+      },
+      initRightMenu() {
+        if (!navbar_initialized) {
+          var $html = document.getElementsByTagName('html')[0];
+          var $bodyClick = document.createElement('DIV');
+          $bodyClick.id = 'bodyClick';
+          //get the left sidebar ready
+          var $sidebar = document.getElementsByClassName('user--leftaside')[0].cloneNode(true);
+
+          //define an empty list to add items..
+          var ul_content = $sidebar.innerHTML;
+
+          var $aside = document.createElement("ASIDE");
+          $aside.className = 'user user--rightaside';
+          $aside.innerHTML = ul_content;
+
+
+          document.getElementsByTagName('body')[0].appendChild($aside);
+
+
+
+          var $toggle = document.getElementById('navbar-toggler');
+
+          $toggle.addEventListener('click', togglerHandler);
+
+          function togglerHandler(e) {
+            if (lbd.misc.navbar_menu_visible == 1) {
+              $html.classList.remove('nav-open');
+              lbd.misc.navbar_menu_visible = 0;
+              $bodyClick.remove();
+              setTimeout(function () {
+                e.target.classList.remove('toggled');
+              }, 400);
+
+            } else {
+              setTimeout(function () {
+                e.target.classList.add('toggled');
+              }, 430);
+
+
+              document.getElementsByTagName('body')[0].appendChild($bodyClick);
+
+              $bodyClick.addEventListener('click', function (e) {
+                $html.classList.remove('nav-open');
+                lbd.misc.navbar_menu_visible = 0;
+                this.remove();
+                setTimeout(function () {
+                  $toggle.classList.remove('toggled');
+                }, 400);
+              });
+
+              $html.classList.add('nav-open');
+              lbd.misc.navbar_menu_visible = 1;
+            }
+          }
+          navbar_initialized = true;
+        }
+      }
+    }
+    if (window.innerWidth <= 762) {
+      lbd.initRightMenu();
+    }
+    window.addEventListener('resize', function () {
+      if (window.innerWidth <= 762) {
+        lbd.initRightMenu();
+      }
+    });
+  }
+
   render() {
     return (
       <aside className={"user user--leftaside " + (this.state.sticky ? "user--sticky" : "")}>
         <div className="user__accounts">
           <div className="user__avatar">
-            <img src="img/icons/avatar.png" width="100px" alt="user-image" />
+            <img src="/img/icons/avatar.png" width="100px" alt="user-image" />
           </div>
           <div className="user__bio">
             <p>I'm witty as ever</p>
@@ -71,7 +148,7 @@ export default class Aside extends React.Component{
         <div className="related-stories">
           <ul className="related-stories__list">
             <li className="related-stories__item">
-              <h5 href="#" className="related-stories__links">Related Stories</h5>
+              <h5 href="#" className="related-stories__links">{ this.props.storyHeadline }</h5>
             </li>
             <li className="related-stories__item">
               <a href="#" className="related-stories__links">
@@ -106,6 +183,7 @@ export default class Aside extends React.Component{
 }
 
 Aside.propTypes = {
+  storyHeadline: PropTypes.string.isRequired
   // title: PropTypes.string.isRequired
 }
 
